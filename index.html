@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<head>
+  <title>KAVA CHAI HUT</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+
+</head>
+
+<body>
+
+  <nav>
+    <A href="#">HOME</A>
+    <A href="#menu">MENU</A>
+    <A href="#about">ABOUT</A>
+    <A href="#contact us">CONTACT US</A>
+    <span id="cart-count">🛒 Cart: 0</span>
+    </A>
+  </nav>
+  <div class="hero">
+    <img src="images.jpg" alt="Kava Chai Hut Restaurant">
+    <h1>Kava Chai Hut</h1>
+    <h2>Fresh tea,Cofee & Delicious Food</h2>
+    <p>WELCOME TO KAVA CHAI HUT. ENJOY TASTY FOOD & REFRESHING DRINKS.</p>
+    <button>View Menu</button>
+  </div>
+  <h2 id="menu">Our Menu</h2>
+  <h3>Chai..</h3>
+  <div class="menu-item">
+    <img src="chai.jpg" alt="Kava Chai">
+
+    <div>
+      <p>Kava Chai - Rs.130/=</p>
+      <button onclick="addToCart('Kava Chai')">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="pot.jpg" alt="Thanthoori chai">
+    <div>
+      <p>ThanthooriChai-RS.200/=</p>
+      <button onclick="addToCart('ThanthooriChai')">Add to Cart</button>
+    </div>
+  </div>
+
+  <h3>Milk Shak..</h3>
+  <div class="menu-item">
+    <img src="OIP.webp" alt="Milk Shak">
+    <div>
+      <p>Choclate Milkshak-Rs.450/=</p>
+      <button onclick="addToCart('Choclate Milkshak')">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="banana.jpg" alt="Banana Milkshake">
+    <div>
+      <p>Banana Milkshak-Rs.450/=</p>
+      <button onclick="addToCart('Banana Milkshak')">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="vanilla.jpg" alt="Vanila Milkshake">
+    <div>
+      <p>vanila Milkshak-Rs.450/=</p>
+      <button onclick="addToCart('vanila Milkshak')">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="oreo.webp" alt="Oreo Milkshake">
+    <div>
+      <p>Oreo Milkshak-Rs.450/=</p>
+      <button onclick="addToCart('Oreo Milkshak')">Add to Cart</button>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="Brownie Milkshake.jpg" alt="Browni Milkshake">
+    <div>
+      <p>Browni Milkshak-Rs.450/=</p>
+      <button onclick="addToCart('Browni Milkshak')">Add to Cart</button>
+    </div>
+  </div>
+
+  <h3>Food..</h3>
+  <div class="menu-item">
+    <img src="submarine.jpg" alt="Submarine">
+    <div>
+      <p>Submarine-Rs.250/=</p>
+      <button onclick="addToCart('Submarine')">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="OIP (1).webp" alt="Burgur">
+    <div>
+      <p>Burgur-Rs.250/=</p>
+      <button onclick="addToCart('Burgur')">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="Chicken-Shawarma.jpg" alt="Shawarma">
+    <div>
+      <p>Shawarma-Rs.450/=</p>
+      <button onclick="addToCart('Shawarma')">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="about">
+    <h2 id="about">About Kava Chai Hut</h2>
+
+    <p>
+      Kava Chai Hut is a friendly restaurant where you can enjoy
+      fresh tea, coffee and delicious food with your family and friends.
+    </p>
+  </div>
+
+  <section id="cart">
+    <h2>🛒 Your Cart</h2>
+
+    <div id="cart-items">
+      <p>Your cart is empty.</p>
+    </div>
+
+    <h3 id="cart-total">Total: 0 LKR</h3>
+  </section>
+  <button id="checkout-btn" onclick="showCheckout()">
+    Place Order
+  </button>
+
+  <div id="checkout-form">
+    <h2>Order Details</h2>
+
+    <input type="text" id="customer-name" placeholder="Your Name">
+
+    <input type="text" id="customer-phone" placeholder="Phone Number">
+
+    <textarea id="customer-address" placeholder="Delivery Address"></textarea>
+
+    <button onclick="placeOrder()">Confirm Order</button>
+  </div>
+  <div class="contact us">
+    <h2 id="contact us">Contact Us</h2>
+
+    <p>Phone:<a href="tel:0776267922">077 626 7922</a></p>
+    <a href="https://wa.me/94776267922" class="whatsapp-btn">
+      Chat on WhatsApp
+    </a>
+    <p>Address: Batticaloa, Sri Lanka</p>
+    <p>Opening Hours: 10.00 AM - 11.00 PM</p>
+  </div>
+
+  <footer>
+    <p>© 2026 Kava Chai Hut. All Rights Reserved.</p>
+  </footer>
+
+</body>
